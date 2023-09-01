@@ -19,6 +19,6 @@
     export default {}
 </script>
 
-<style>
+<style scoped>
 .v-footer { padding: 8px 0 0 !important; }
 </style>
