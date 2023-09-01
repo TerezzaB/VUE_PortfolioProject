@@ -118,15 +118,17 @@
         </div>
       </v-col>
 
+
       <v-col cols="12" class="imgHover">
         <v-row class="fill-height" align="center" justify="center">
           <template v-for="(item, i) in items" :key="i">
-            <v-col cols="12" md="4"></v-col>
-            <v-hover v-slot="{ isHovering, props }">
-              <v-card :elevation="isHovering ? 12:2" :class="{ 'on-hover' : isHovering }" v-bind="props">
-                <v-img :src="item.img" height="225px" cover></v-img>
-              </v-card>
-            </v-hover>
+            <v-col cols="12" md="4">
+              <v-hover v-slot="{ isHovering, props }">
+                <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover' : isHovering }" v-bind="props">
+                  <v-img :src="item.img" height="225px" cover></v-img>
+                </v-card>
+              </v-hover>
+            </v-col>
           </template>
         </v-row>
       </v-col>
@@ -247,22 +249,22 @@ export default defineComponent({
       slider2: 50,
       items: [
         {
-          img: "p-img1.jpeg",
+          img: require('@/assets/p-img1.jpeg'),
         },
         {
-          img: "p-img2.jpeg",
+          img: require('@/assets/p-img2.jpeg'),
         },
         {
-          img: "p-img3.jpeg",
+          img: require('@/assets/p-img3.jpeg'),
         },
         {
-          img: "p-img4.jpeg",
+          img: require('@/assets/p-img4.jpeg'),
         },
         {
-          img: "p-img5.jpeg",
+          img: require('@/assets/p-img5.jpeg'),
         },
         {
-          img: "p-img6.jpeg",
+          img: require('@/assets/p-img6.jpeg'),
         },
       ]
     }
