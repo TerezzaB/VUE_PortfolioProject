@@ -7,18 +7,17 @@
         <v-row>
           <v-col cols="5">
             <div style="position:relative" class="mt-16">
-              <h1 class="text-grey">Hello,</h1>
+              <span class="text-grey" style="font-size:32px">Hello,</span>
               <h1 class="text-white">I'm TerezzaB</h1>
-              <span class="text-grey">Web Developer</span>
-
+              <h1 class="text-grey" style="font-size:20px">Web Developer</h1>
               <br />
-              <v-btn tile dark class="text-purple mt-8" variant="outlined">Contact me</v-btn>
+              <v-btn tile dark @click="scroll('contact')" class="text-purple mt-8" variant="outlined">Contact me</v-btn>
             </div>
           </v-col>
   
           <v-col cols="2">
             <div class="arrow-down"> 
-              <v-icon>fas fa-angle-double-down</v-icon>
+              <v-icon @click="scroll('about')">fas fa-angle-double-down</v-icon>
             </div>
           </v-col>
 
@@ -274,6 +273,13 @@ export default defineComponent({
     NavBar,
     FooterView
   },
+
+  methods: {
+    scroll(refName) {
+        const element = document.getElementById(refName);
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+  },
 });
 </script>
 
@@ -287,7 +293,7 @@ export default defineComponent({
   .egg { display: grid; margin-left: 100px; margin-top: 50px; width: 356px; height: 300px; background-color: #efe3fd; border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%; align-items: center; }
   .first { width: 100%; height: 280px; text-align: center; padding: 2rem 2rem; }
   .child { display: inline-block; padding: 2rem 1rem; vertical-align: middle; text-align: center; margin-right: 0 2000px; }
-  .imgHover { padding: 0 200px; }
+  .imgHover { padding: 0 10% 100px; }
   .pre { width: 100%; height: 380px; text-align: center; padding: 0 200px; background-color: #F5F5F5; }
   .hire { width: 100%; height: 200px; padding: 0 200px; background-color: #E9E9E9; margin-top: -24px; }
 </style>
