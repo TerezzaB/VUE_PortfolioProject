@@ -41,7 +41,7 @@
             </v-col>
 
             <v-col cols="12" md="6">
-              <h4 class="mt-16" style="font-size:20px">About me</h4>
+              <h4 class="mt-16" style="font-size:20px">About Me</h4>
               <div style="width:200px">
                 <v-slider v-model="slider2" color="purple"></v-slider>
               </div>
@@ -56,7 +56,7 @@
       </v-col>
 
       <div class="text-center mt-10">
-        <h2>What we Do?</h2>
+        <h2>What I Do?</h2>
         <div style="width:200px;margin:0 auto;">
           <v-slider v-model="slider2" color="purple"></v-slider>
         </div>
@@ -131,11 +131,6 @@
         </v-row>
       </v-col>
 
-      <v-col cols="12" sm="12">
-        <div class="d-flex justify-center mb-6">
-          <v-btn color="purple" class="mt-4">Load More</v-btn>
-        </div>
-      </v-col>
 
       <v-col cols="12" id="page">
         <div class="pre">
