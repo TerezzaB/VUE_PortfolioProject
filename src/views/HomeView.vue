@@ -78,7 +78,6 @@
               </div>
             </v-col>
 
-            <!---
             <v-col cols="12" sm="6" md="4">
               <div class="child">
                   <v-btn icon="fas fa-mobile-alt" color="#efe3fd" class="text-white"></v-btn>
@@ -107,7 +106,6 @@
               </div>
             </v-col>
 
-            --->
           </v-row>
           <v-divider></v-divider>
         </div>
