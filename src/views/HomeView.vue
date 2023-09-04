@@ -188,7 +188,7 @@
         <v-row>
           <v-col cols="12" sm="4">
             <div class="child">
-              <h3 class="text-left">Contact info</h3>
+              <h3 class="text-center">Contact info</h3>
               <v-divider></v-divider>
               <v-btn icon="fas fa-map-marker-alt" class="mt-10" variant="outlined"></v-btn>
               <br />
