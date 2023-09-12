@@ -24,3 +24,10 @@
         }
     }
 </script>
+
+<style scoped>
+    v-app-bar { background-color: #000; }
+    @media(max-width: 400px) {
+        v-btn { font-size: 12px; }
+    }
+</style>
