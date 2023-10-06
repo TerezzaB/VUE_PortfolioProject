@@ -221,7 +221,7 @@
                 <v-text-field label="Email" variant="outlined"></v-text-field>
               </v-col>
               <v-col cols="12" sm="6">
-                <v-text-field label="Phone" variant="outlined"></v-text-field>
+                <v-text-field label="Phone number" variant="outlined"></v-text-field>
               </v-col>
             </v-row>
             <v-textarea label="Message" variant="outlined"></v-textarea>
